@@ -64,12 +64,12 @@ Install the required libraries:
 
 Execute each script sequentially as described in the comments within each script:
 
-> Run inventory_snapshot_import_and_clean.py
-> Run 2_wk_movement_import_and_clean.py
-> Run merge_inventory_movement.py
-> Run shorts_calculator_today.py
+- Run <strong>'inventory_snapshot_import_and_clean.py'</strong>
+- Run <strong>'2_wk_movement_import_and_clean.py'</strong>
+- Run <strong>'merge_inventory_movement.py'</strong>
+- Run <strong>'shorts_calculator_today.py'</strong>
 
-<strong>The final report will be generated as 'top_10_movers_this_week.csv.'</strong>
+The final report will be generated as <strong>'top_10_movers_this_week.csv.'</strong>
 
 
 
