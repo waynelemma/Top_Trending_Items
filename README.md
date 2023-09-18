@@ -5,8 +5,7 @@
 This Python project consists of a series of scripts designed to automate and streamline the process of identifying the top 10 product movers for a given week. These movers are identified based on specific criteria, 
 and the project involves data import, cleaning, calculation, and reporting.
 
-After importing and cleaning the required data, the script generates an Excel spreadsheet detailing key metrics such as a weekly (%) change in cases sold, customer count, and average order size. These stats are then averaged together to find the 'mover_rate' (expressed as %),
-providing a more comprehensive overview of each item's sales performance:
+After importing and cleaning the required data, the script generates an Excel spreadsheet detailing key metrics such as a weekly (%) change in cases sold, customer count, and average order size. These stats are then averaged together to find the 'mover_rate' (expressed as %), providing a more comprehensive overview of each item's sales performance:
 
 | PROD# | PRODUCT DESCRIPTION          | last_wk_total | this_wk_total | rate_of_change | cust_count_last_wk | cust_count_this_wk | cust_count_rate_of_change | avg_cs_per_cust_last_wk | avg_cs_per_cust_this_wk | avg_cust_rate_of_change | mover_rate |
 |-------|------------------------------|---------------|----------------|----------------|--------------------|---------------------|---------------------------|-------------------------|--------------------------|------------------------|------------|
@@ -26,42 +25,42 @@ providing a more comprehensive overview of each item's sales performance:
 
 The project performs the following tasks:
 
-Inventory Snapshot Import and Cleaning: This script imports an inventory snapshot, removes the last row (presumably a total row), and cleans the data.
+- Inventory Snapshot Import and Cleaning: This script imports an inventory snapshot, removes the last row (presumably a total row), and cleans the data.
 
-2-Week Movement Import and Cleaning: This script imports 2-week movement data, cleans it, and pivots it to prepare for analysis.
+- 2-Week Movement Import and Cleaning: This script imports 2-week movement data, cleans it, and pivots it to prepare for analysis.
 
-Merge Inventory Movement: This script merges inventory and movement data and creates a cleaned dataset for further analysis.
+- Merge Inventory Movement: This script merges inventory and movement data and creates a cleaned dataset for further analysis.
 
-Shorts Calculator Today: This script calculates the top 10 movers based on specified criteria, including rate of change in orders and customer counts.
+- Shorts Calculator Today: This script calculates the top 10 movers based on specified criteria, including rate of change in orders and customer counts.
 
 <h3>Benefits</h3>
 
 This project offers the following benefits:
 
-<strong>Automation</strong>: Automates the process of identifying the top 10 product movers, saving time and reducing manual effort.
+- <strong>Automation</strong>: Automates the process of identifying the top 10 product movers, saving time and reducing manual effort.
 
-<stong>Data Integrity</strong>: Ensures data integrity by cleaning and processing the data.
+- <strong>Data Integrity</strong>: Ensures data integrity by cleaning and processing the data.
 
-<strong>Insightful Reporting</strong>: Allows Purchasing, Marketing, Sales, and Customer Service to more accurately gauge product movement. This data is helpful to evaluate if current marketing strategies are effective in promoting specific products, or if
+- <strong>Insightful Reporting</strong>: Allows Purchasing, Marketing, Sales, and Customer Service to more accurately gauge product movement. This data is helpful to evaluate if current marketing strategies are effective in promoting specific products, or if
 adjustments need to be made.
 
 <h3>Prerequisites</h3>
 
 Before using this project, ensure that you have the following prerequisites installed:
 
-Python (3.x recommended)
-Pandas library
-NumPy library
+- Python (3.x recommended)
+- Pandas library
+- NumPy library
 
 <h3>Installation</h3>
 
-Clone this repository to your local machine: git clone https://github.com/your-username/daily-order-calculator.git
+Clone this repository to your local machine
 
 Install the required libraries:
 
 > pip install pandas numpy
 
-Place your data files in the appropriate directories or update the file paths in the scripts to point to your data.
+<strong>Note</strong>: Ensure you are placing your data files in the appropriate directories and updating the file paths in the scripts to point to your data.
 
 Execute each script sequentially as described in the comments within each script:
 
@@ -70,24 +69,7 @@ Execute each script sequentially as described in the comments within each script
 > Run merge_inventory_movement.py
 > Run shorts_calculator_today.py
 
-The final report will be generated as top_10_movers_this_week.csv.
-
-Project Structure
-The project is organized as follows:
-
-daily-order-calculator/
-│
-├── inventory_snapshot_import_and_clean.py
-├── 2_wk_movement_import_and_clean.py
-├── merge_inventory_movement.py
-├── shorts_calculator_today.py
-├── README.md
-│
-└── data/
-    ├── inventory_snapshot_today.csv
-    ├── last_2wk_movement_today_customers.csv
-    ├── prop_master_list.csv
-    └── (Other data files)
+<strong>The final report will be generated as 'top_10_movers_this_week.csv.'</strong>
 
 
 
